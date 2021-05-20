@@ -2,15 +2,6 @@
 <html lang="ja">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ7RN5NQ82"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-BJ7RN5NQ82');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="大阪でデザインするhpmeisterのホームページ。ウェブやグラフィック等のデザインが可能。">
@@ -28,6 +19,15 @@
   <link rel="icon" href="https://hpmeister.com/site.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="https://hpmeister.com/site.png">
   <link rel="canonical" href="https://hpmeister.com">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ7RN5NQ82"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BJ7RN5NQ82');
+  </script>
 </head>
 
 <body>
