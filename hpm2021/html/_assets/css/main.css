@@ -1,0 +1,13 @@
+@import url("common.css");
+
+@import url("small.css") screen and (max-width: 755px);
+
+@import url("big.css") print, screen and (min-width: 756px);
+
+@import url("dark.css") (prefers-color-scheme: dark) ;
+
+@import url("light.css") (prefers-color-scheme: light) ;
+
+
+
+

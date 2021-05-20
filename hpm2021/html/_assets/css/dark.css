@@ -1,0 +1,50 @@
+* {
+  color: #e0e0e0;
+}
+
+.thecontent {
+  background-color: #333;
+}
+
+header, footer.title {
+  background-color: #69003e;
+}
+
+footer {
+  background-color: #626262;
+}
+
+body {
+  background-color: #000;
+}
+
+section h2, section h1.title {
+  color: #a70162;
+}
+
+.servicedetail {
+  background-color: #000;
+}
+button.servicedetail_button {
+  background-color: #07718b;
+  border: none;
+}
+button.close {
+  color: #07718b;
+  border: 1px solid;
+  background-color: transparent;
+  border-color: #07718b;
+}
+.menu li a {
+  background-color: #000;
+  color: #e0e0e0;
+}
+
+footer.content .socmed img {
+  filter:invert(100%);
+  -webkit-filter:invert(100%);
+}
+
+.servicemember {
+  border-color: #07718b;
+}

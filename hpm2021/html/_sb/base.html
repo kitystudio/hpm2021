@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="{site_encoding}"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{site_lang}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={site_encoding}" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=800" />
+<title>{site_title}</title>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{site_rss}" />
+<link rel="alternate" type="application/atom+xml" href="{site_atom}" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="{site_rsd}" />
+<link rel="stylesheet" href="{site_css}" type="text/css" />
+<script type="text/javascript" src="{site_parts}sb-asterism-script.js"></script>
+</head>
+<body>
+<div class="header">
+<!-- BEGIN title -->
+<h1 id="top">{blog_name}</h1>
+<p>{blog_description}</p>
+<!-- END title -->
+</div><!--_end_header_-->
+<div class="body">
+<div class="contents">
+<!-- BEGIN entry -->
+<div class="entry">
+<div class="article-header">
+  <h2 class="title"><a href="https://hpmeister.com/blog.php?blog={entry_permalink}&title={entry_title}">{entry_title}</a></h2>
+</div>
+<ul class="info">
+<p class="cat">TAG: <a href="http://blog.hpmeister.com/sb.cgi?cid=">{category_name}</a></p>
+<li class="auth">by {user_name}</li>
+<li class="date">{entry_date} {entry_disp_time}</li>
+</ul>
+<div class="entry_body">{entry_description}</div>
+<div class="entry_more"><a href="https://hpmeister.com/blog.php?blog={entry_permalink}&title={entry_title}">{entry_title}の続きを読む &raquo;</a></div>
+<ul class="status">
+<li class="com">{comment_num}</li>
+<li class="tb">{trackback_num}</li>
+</ul>
+</div><!--_end_entry_-->
+{trackback_auto_discovery}
+<!-- END entry -->
+<!-- BEGIN comment_area -->
+<div class="comment">
+<h3 id="comments">Comments</h3>
+<!-- BEGIN comment -->
+<dl class="body">
+<dt>{comment_name} {comment_icon}</dt>
+<dd>{comment_description}</dd>
+<dd class="date">{comment_time}</dd>
+</dl>
+<!-- END comment -->
+<form action="{site_cgi}" method="post">
+<h4>Comment Form</h4>
+<dl>
+<dt><label for="name" id="labelname">name:</label></dt>
+<dd>
+<input type="text" tabindex="1" name="name" id="name" value="{cookie_name}" size="20" />
+<label for="set_cookie">Cookie</label><input type="checkbox" name="set_cookie" value="1" id="set_cookie">
+</dd>
+<dt><label for="email" id="labelemail">email:</label></dt>
+<dd><input type="text" tabindex="2" name="email" id="email" value="{cookie_email}" size="30" /></dd>
+<dt><label for="url" id="labelurl">url:</label></dt>
+<dd><input type="text" tabindex="3" name="url" id="url" value="{cookie_url}" size="30" /></dd>
+<dt><label for="description" id="labeldescription">comments:</label></dt>
+<dd><textarea tabindex="5" id="description" name="description" rows="8" cols="45"></textarea></dd>
+<dt><label for="description" id="labelsubmit">submit</label></dt>
+<dd>
+<input type="submit" tabindex="6" id="submit" value="submit" />
+<input type="reset" value="reset" />
+<input type="hidden" name="entry_id" value="{entry_id}" />
+<input type="hidden" name="charset" value="{site_encoding}" />
+</dd>
+</dl>
+</form>
+</div><!--_end_comment_-->
+<!-- END comment_area -->
+<!-- BEGIN trackback_area -->
+<div class="trackback">
+<h3 id="trackback">Trackbacks</h3>
+<p class="link">Trackback URL : <strong>{trackback_url}</strong></p>
+<!-- BEGIN trackback -->
+<dl class="body">
+<dt>{trackback_title}</dt>
+<dd>{trackback_excerpt}</dd>
+<dd class="info">{trackback_blog_name} | {trackback_time}</dd>
+</dl>
+<!-- END trackback -->
+</div><!--_end_trackback_-->
+<!-- END trackback_area -->
+<!-- BEGIN profile_area -->
+<div class="entry">
+<h2 class="title">{profile_name}</h2>
+<ul class="info">
+<li class="cat">user profile</li>
+</ul>
+<div class="entry_body">{profile_description}</div>
+</div><!--_end_entry_-->
+<!-- END profile_area -->
+<!-- BEGIN page -->
+<div class="page">
+{prev_page_link} {page_now}/{page_num} {next_page_link}
+</div>
+<!-- END page -->
+<!-- BEGIN sequel -->
+<div class="page">
+{prev_entry} | {next_entry}
+</div>
+<!-- END sequel -->
+</div><!--_end_contents_-->
+<div class="navigation">
+<!-- BEGIN category -->
+<dl class="category">
+<dt id="categoryname">Categories</dt>
+<dd id="categorylist">{category_list}</dd>
+</dl>
+<!-- END category -->
+<!-- BEGIN recent_comment -->
+<dl class="recentcomment">
+<dt id="commentname">Comments</dt>
+<dd id="commentlist">{recent_comment_list}</dd>
+</dl>
+<!-- END recent_comment -->
+<!-- BEGIN recent_trackback -->
+<dl class="recenttrackback">
+<dt id="tbname">Trackbacks</dt>
+<dd id="tblist">{recent_trackback_list}</dd>
+</dl>
+<!-- END recent_trackback -->
+<!-- BEGIN profile -->
+<dl class="profile">
+<dt id="profilename">Users</dt>
+<dd id="profilelist">{user_list}</dd>
+</dl>
+<!-- END profile -->
+<!-- BEGIN link -->
+<dl class="links">
+<dt id="linkname">Links</dt>
+<dd id="linklist">{link_list}</dd>
+</dl>
+<!-- END link -->
+<form method="get" action="{site_cgi}">
+<dl class="search">
+<dt>Search</dt>
+<dd><input type="text" id="search" name="search" size="16" class="form" />
+<input type="submit" value="find" class="button" /></dd>
+</dl>
+</form>
+<dl class="extra">
+<dt id="extraname">Others</dt>
+<dd id="extralist">
+<ul>
+<li><a href="{site_rss}">RSS1.0</a></li>
+<li><a href="{site_atom}">Atom0.3</a></li>
+<li><a href="{script_webpage}">{script_name} {script_version}</a></li>
+</ul>
+</dd>
+</dl>
+</div><!--_end_navigation_-->
+<hr id="body_separator" />
+</div><!--_end_body_-->
+<div class="footer">
+<address>Copyright &copy; 2006 <a href="{script_webpage}">SimpleBoxes</a>. All Rights Reserved.</address>
+<p id="link2top"><a href="#top">page top</a></p>
+<!-- BEGIN counter -->
+{collect_log}
+<!-- END counter -->
+</div><!--_end_footer_-->
+</body>
+</html>

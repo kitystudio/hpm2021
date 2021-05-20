@@ -1,0 +1,315 @@
+* {
+  font-size: 14px;
+  font-family:  -apple-system, BlinkMacSystemFont, roboto;
+/*  font-family:  -apple-system, BlinkMacSystemFont, roboto, system-ui, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'メイリオ', meiryo,  '游ゴシック  Medium', sans-serif;*/
+  padding: 0;
+  margin: 0;
+  line-height: 1.7rem;
+  font-feature-settings: "palt";
+  -webkit-text-size-adjust: none;/* Chrome84からは必須 実際より小さく表示されるため */
+  text-size-adjust: none;
+}
+
+header h1 {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section a[target="_blank"]:not(a[rel="lightbox"])::after {
+  content: "";
+  background-image: url(/_assets/link.svg);
+  display: inline-block;
+  width: 12px;
+  margin-left: 6px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+section#news p::before,
+section#blog li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+section#news p::before {
+  background-image: url(/_assets/li_bl.svg);
+}
+
+section#blog li::before {
+  background-image: url(/_assets/blog_bl.svg);
+}
+
+section a:not([rel="lightbox"]):not(.article-body) {
+  text-decoration: none;
+  border-bottom: solid 2px;
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+}
+
+section a:not([rel="lightbox"])::first-letter {
+  margin-left: 0px;
+}
+
+section li {
+  padding-bottom: 8px;
+}
+
+.article-body ol,
+section ol {
+  line-height: 2rem;
+  margin-left: 20px;
+  list-style: decimal!important;
+}
+
+
+
+section {
+  padding-top: 5rem;
+}
+
+section h2, .current, section h1.title {
+  color: #9E005D;
+}
+
+input[type=text], textarea {
+  font-size: 16px;
+  line-height: 1.8rem;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h2, h1:not(.small) {
+  font-size: 20px;
+}
+
+.thecontent {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.servicedetail {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/*  margin: auto;*/
+  width: 75%;
+  max-width: 480px;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 0px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.servicedetail .title, .servicedetail .detail {
+  padding-bottom: 1rem;
+}
+.servicedetail p {
+  padding-bottom: 1rem;
+}
+
+footer.title {
+  margin-top: 5rem;
+}
+
+footer a, a {
+  text-decoration: none;
+}
+
+footer.title h2 {
+  color: #e0e0e0;
+}
+
+footer ul.socmed {
+  display: flex;
+  align-items: center;
+}
+
+footer ul.socmed li {
+  display: block;
+}
+
+footer ul.socmed li img {
+  object-fit: contain;
+  height: 20px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+
+.wrapper {
+  width: 90%;
+  max-width: 680px;
+  margin: auto;
+}
+
+
+.footerbottom {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+footer a {
+  padding: 5px;
+}
+
+header {
+  display: flex;
+  z-index: 50;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 30px;
+  margin-bottom: -1rem;
+}
+
+small {
+  font-size: 12px;
+}
+
+footer h2 {
+  padding: 0.5rem 0;
+}
+
+footer.content {
+  padding: 1rem 0 2rem;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  right: 1rem;
+  
+}
+
+.menu li a {
+  display: block;
+  padding: 1rem 2rem;
+  margin: 1px 0;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sectiontitle {
+  margin-bottom: 2rem;
+}
+
+.profwrapper {
+  padding: 25px 0;
+  
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+}
+
+.year {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 5px;
+  scroll-snap-align: start;
+  flex: 0 0 156px;
+}
+
+.year li.title {
+  border-bottom: 1px solid;
+  font-weight: 900;
+  margin: 0 -5px 5px;
+  text-align: center;
+}
+
+.year .static {
+  font-weight: 900;
+  padding-top: 1rem;
+}
+
+.serviceswrapper {
+  scroll-padding: 1rem;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  padding: 25px 0;
+}
+
+.servicemember {
+  position: relative;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin: 0 5px;
+  height: 12rem;
+  -ms-overflow-style: none;/* IE, Edge 対応 */
+  scroll-snap-align: start;
+  align-items: center;
+  flex: 0 0 148px;
+}
+
+.servicemember > .title {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.servicemember .description {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+li.personal, li.world {
+  text-align: justify;
+}
+
+li.personal p {
+  padding-bottom: 1rem;
+}
+
+li.personal p:last-child {
+  padding-bottom: 0rem;
+}
+
+.servicedetail_button {
+  width: 10rem;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+}
+
+a[id] {
+  display: none;
+}

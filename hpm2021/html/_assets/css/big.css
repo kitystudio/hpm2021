@@ -1,0 +1,50 @@
+footer ul.socmed {
+  justify-content: center;
+}
+
+footer ul.socmed li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menutoggle:hover, button {
+  cursor: pointer;
+}
+
+section a:hover, nav a:hover {
+  color: #2F75EB!important;
+  transition: 1s;
+}
+.serviceswrapper {
+  justify-content: unsafe center;
+}
+
+.magnifyBtn {
+/*    padding: 12px 24px;*/
+/*    background-color: hsl(222, 100%, 95%);*/
+/*    color: hsl(243, 80%, 62%);*/
+/*    border-radius: 6px;*/
+    transition: transform 250ms ease-in-out;
+}
+
+.magnifyBtn:hover {
+    transform: scale(1.10);
+}
+
+.magnifyBtn:active {
+    transform: scale(.9);
+}
+
+.searchform input[type=text] {
+  font-size: 14px!important;
+}
+
+ul.allposts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.allposts li {
+  width: calc( 33% - 5px );
+}

@@ -1,0 +1,42 @@
+* {
+  color: #666;
+}
+header, footer.title {
+  background-color: #9E005D;
+  color: #E0E0E0;
+}
+
+footer {
+  background-color: #e0e0e0;
+}
+
+.thecontent {
+  background-color: #f8f8f8;
+}
+
+body {
+  background-color: #666;
+}
+
+.servicedetail {
+  background-color: #fff;
+}
+
+button.servicedetail_button {
+  background-color: #2F75EB;
+  border: none;
+}
+button.close {
+  border-color: #2F75EB;
+  border: 1px solid;
+  color: #2F75EB;
+  background-color: transparent;
+}
+.menu li a {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.servicemember {
+  border-color: #2F75EB;
+}
