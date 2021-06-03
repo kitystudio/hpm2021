@@ -73,7 +73,10 @@ img.pict {
 .article-body table + figcaption {
   text-align: center;
 }
-
+figure figcaption {
+  text-align: center;
+  margin-top: -2rem!important;
+}
 .article-body img,
 .article-body-more img {
   margin-top: 2rem;
