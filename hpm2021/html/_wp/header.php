@@ -57,7 +57,7 @@
   <link rel="stylesheet" href="https://hpmeister.com/_assets/css/main.css">
   <link rel="stylesheet" href="https://hpmeister.com/_assets/css/blog.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous">
-  <link rel="icon" href="https://hpmeister.com/site.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://hpmeister.com/site.svg" sizes="32x32" type="image/svg+xml">
   <link rel="apple-touch-icon-precomposed" href="https://hpmeister.com/site.png">
   
   <?php wp_head(); ?>

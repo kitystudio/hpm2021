@@ -16,7 +16,7 @@
   <meta name="msapplication-TileColor" content="#000">
   <title>hpmeister.com</title>
   <link rel="stylesheet" href="/_assets/css/main.css">
-  <link rel="icon" href="https://hpmeister.com/site.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://hpmeister.com/site.svg" sizes="32x32" type="image/svg+xml">
   <link rel="apple-touch-icon-precomposed" href="https://hpmeister.com/site.png">
   <link rel="canonical" href="https://hpmeister.com">
   <!-- Global site tag (gtag.js) - Google Analytics -->
