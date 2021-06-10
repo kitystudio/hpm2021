@@ -81,7 +81,7 @@ section {
   padding-top: 5rem;
 }
 
-section h2, .current, section h1.title {
+section h2, .current, section h1.title span, h1.title {
   color: #9E005D;
 }
 
@@ -98,7 +98,7 @@ h4 {
   font-size: 16px;
 }
 
-h2, h1:not(.small) {
+h2, h1:not(.small), h1 span {
   font-size: 20px;
 }
 

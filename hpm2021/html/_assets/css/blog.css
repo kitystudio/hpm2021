@@ -14,6 +14,10 @@ img.pict {
   padding-bottom: 1rem;
 }
 
+h1 span {
+  display: inline-block;
+}
+
 .article-header,
 .archives-header {
   background-color: transparent;
