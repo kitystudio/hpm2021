@@ -1,5 +1,5 @@
 <aside class="categories">
-  <h3>タグクラウド</h3>
+  <h3 class="menu_title">タグクラウド</h3>
   <ul class="tagcloud">
 <?php
   $categories = get_categories('pad_counts=1&hide_empty=1');

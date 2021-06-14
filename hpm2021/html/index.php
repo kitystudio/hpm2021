@@ -100,13 +100,12 @@
         </div>
       </div>
     </footer>
-    <div class="menu">
-      <h3 class="menu_title">memo blog</h3>
+    <aside class="menu">
 <?php //WP 投稿ページ
-  readfile ('https://memo.hpmeister.com/');
+  readfile ('https://memo.hpmeister.com/home/');
 ?>
-      <h3 class="menu_title">tag cloud</h3>
-    </div>
+
+    </aside>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="/_assets/main.js"></script>

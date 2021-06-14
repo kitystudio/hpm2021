@@ -34,7 +34,8 @@ section a[target="_blank"]:not(a[rel="lightbox"])::after {
 }
 
 section#news p::before,
-section#blog li::before {
+section#blog li::before,
+.menu ul.recent li::before {
   content: "";
   display: inline-block;
   width: 8px;
@@ -47,7 +48,8 @@ section#news p::before {
   background-image: url(/_assets/li_bl.svg);
 }
 
-section#blog li::before {
+section#blog li::before,
+.menu ul.recent li::before {
   background-image: url(/_assets/blog_bl.svg);
 }
 
@@ -209,27 +211,36 @@ footer.content {
 }
 
 .menu {
-  padding: 0.5rem 2rem;
-  display: block;
-  position: absolute;
+  padding: 0.5rem 2rem 2rem;
+  display: none;
+  position: fixed;
   top: 45px;
   right: 1rem;
   z-index: 1000;
   width: min( 90%, 480px);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
   opacity: 0.75;
   border-radius: 5px;
+}
+
+.menu .tagcloud li {
+  display: inline-block;
+  padding-bottom: .5rem;
+}
+
+.menu .tagcloud li a {
+  padding-right: 1rem;
 }
 
 .menu_title {
   padding: 1.5rem 0rem;
 }
 
-.menu li a {
-  display: block;
-  padding: 0.5rem 2rem;
-  margin: 1px 0;
+.menu ul.recent li a {
+  /* display: block; */
+  line-height: 2rem;
+  padding: 0.4rem 2rem 0.4rem 0.4rem;
   text-decoration: none;
   font-size: 16px;
   white-space: nowrap;
@@ -325,4 +336,35 @@ li.personal p:last-child {
 
 a[id] {
   display: none;
+}
+
+.text_righted {
+  text-align: right;
+}
+
+.searchform div {
+  display: flex;
+  align-items: center;
+}
+
+.searchform label {
+  flex-grow: 0;
+}
+
+.searchform input[type=text] {
+  /* width: 50%; */
+  flex-grow: 2;
+  margin-left: 5px;
+  padding: 4px;
+}
+
+.searchform input[type=submit] {
+  flex-grow: 1;
+  padding: 5px;
+  /* width: 120px; */
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid;
+  margin-left: 5px;
+  border-radius: 5px;
 }
