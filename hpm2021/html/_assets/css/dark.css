@@ -25,18 +25,24 @@ section h2, section h1.title {
 .servicedetail {
   background-color: #000;
 }
+
 button.servicedetail_button {
   background-color: #07718b;
   border: none;
 }
+
 button.close {
   color: #07718b;
   border: 1px solid;
   background-color: transparent;
   border-color: #07718b;
 }
+
+.menu {
+  background: #000;
+}
+
 .menu li a {
-  background-color: #000;
   color: #e0e0e0;
 }
 

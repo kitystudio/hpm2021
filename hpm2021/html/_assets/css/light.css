@@ -26,14 +26,20 @@ button.servicedetail_button {
   background-color: #2F75EB;
   border: none;
 }
+
 button.close {
   border-color: #2F75EB;
   border: 1px solid;
   color: #2F75EB;
   background-color: transparent;
 }
+
+.menu {
+  background: #f0f0f0;
+  box-shadow: 5px 5px 10px;
+}
+
 .menu li a {
-  background-color: #e0e0e0;
   color: #000;
 }
 
