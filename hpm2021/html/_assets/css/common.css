@@ -34,11 +34,19 @@ section a[target="_blank"]:not(a[rel="lightbox"])::after {
 }
 
 section#news p::before,
-section#blog li::before,
-.menu ul.recent li::before {
+section#blog li::before {
   content: "";
   display: inline-block;
   width: 8px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu ul.recent a::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
   height: 11px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -49,7 +57,7 @@ section#news p::before {
 }
 
 section#blog li::before,
-.menu ul.recent li::before {
+.menu ul.recent a::before {
   background-image: url(/_assets/blog_bl.svg);
 }
 
@@ -211,17 +219,19 @@ footer.content {
 }
 
 .menu {
-  padding: 0.5rem 2rem 2rem;
+  padding: 0.5rem 2rem 2.5rem;
   display: none;
   position: fixed;
   top: 45px;
   right: 1rem;
   z-index: 1000;
-  width: min( 90%, 480px);
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
+  width: min( 75%, 480px - 4rem );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   opacity: 0.75;
   border-radius: 5px;
+  max-height: 100%;
+  overflow-y: scroll;
 }
 
 .menu .tagcloud li {
@@ -230,17 +240,17 @@ footer.content {
 }
 
 .menu .tagcloud li a {
-  padding-right: 1rem;
+  padding: 0.5rem;
 }
 
 .menu_title {
-  padding: 1.5rem 0rem;
+  padding: 2rem 0rem 1rem;
 }
 
 .menu ul.recent li a {
-  /* display: block; */
+  display: block;
   line-height: 2rem;
-  padding: 0.4rem 2rem 0.4rem 0.4rem;
+  padding: 0.4rem 0rem 0.4rem 0rem;
   text-decoration: none;
   font-size: 16px;
   white-space: nowrap;
