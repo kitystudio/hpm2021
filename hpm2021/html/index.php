@@ -34,31 +34,13 @@
   <div class="thecontent">
     <header>
       <div class="logo"><h1>大阪でデザインするhpmeisterのホームページ</h1><a href="https://hpmeister.com/"><img src="/_assets/logo.svg" alt="hpmeister logo" width="160"></a></div>
-      <nav>
-        <img src="/_assets/menu.svg" alt="" width="30" class="menutoggle">
-        <div class="menu">
-          <ul>
-            <li><a href="#news">page top</a></li>
-            <li><a href="#service">service</a></li>
-            <li><a href="#prof">profile</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
-        </div>
-      </nav>
+      <nav><img src="/_assets/menu.svg" alt="" width="30" class="menutoggle"></nav>
     </header>
     <section id="news">
       <div class="wrapper">
         <h2 class="sectiontitle">information</h2>
 <?php // WP 固定ページ（Information）
   readfile ('https://memo.hpmeister.com/information/');
-?>
-      </div>
-    </section>
-    <section id="blog">
-      <div class="wrapper">
-        <h2 class="sectiontitle">blog</h2>
-<?php //WP 投稿ページ
-  readfile ('https://memo.hpmeister.com/');
 ?>
       </div>
     </section>
@@ -118,6 +100,13 @@
         </div>
       </div>
     </footer>
+    <div class="menu">
+      <h3 class="menu_title">memo blog</h3>
+<?php //WP 投稿ページ
+  readfile ('https://memo.hpmeister.com/');
+?>
+      <h3 class="menu_title">tag cloud</h3>
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="/_assets/main.js"></script>

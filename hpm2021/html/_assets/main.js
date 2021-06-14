@@ -8,7 +8,7 @@ $(function(){
   });
   
   $('.menutoggle').click(function(){
-    $(this).next().fadeToggle();
+    $('.menu').fadeToggle();
  /*   if ($(this).next().css("right") == "-10rem") {
       $(this).next().animate({"right":"1rem"});
     } else {

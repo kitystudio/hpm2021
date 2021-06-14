@@ -209,19 +209,32 @@ footer.content {
 }
 
 .menu {
-  display: none;
+  padding: 0.5rem 2rem;
+  display: block;
   position: absolute;
   top: 45px;
   right: 1rem;
-  
+  z-index: 1000;
+  width: min( 90%, 480px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0.75;
+  border-radius: 5px;
+}
+
+.menu_title {
+  padding: 1.5rem 0rem;
 }
 
 .menu li a {
   display: block;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   margin: 1px 0;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sectiontitle {
