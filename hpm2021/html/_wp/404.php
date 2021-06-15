@@ -3,7 +3,7 @@
 get_header();
 
 
-echo '<div class="article-header"><h2 class="title">'.wp_title('', false).'</h2></div>';
+echo '<div class="article-header"><h2 class="title">'.wp_title( '', false ).'</h2></div>';
 echo '<div class="article-body">';
 echo '<p>URLを手打ちしてませんか？<br>';
 echo 'それか、投稿ページのスラッグを変えたかもしれません。</p>';
