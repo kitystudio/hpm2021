@@ -228,7 +228,6 @@ footer.content {
   width: min( 75%, 480px - 4rem );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  opacity: 0.75;
   border-radius: 5px;
   max-height: 100%;
   overflow-y: scroll;

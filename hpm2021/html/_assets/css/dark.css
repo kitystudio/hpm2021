@@ -39,7 +39,7 @@ button.close {
 }
 
 .menu {
-  background: #000;
+  background: rgba(0, 0, 0, .75);
 }
 
 .menu li a {

@@ -25,7 +25,7 @@ if ( $the_query->have_posts() ) :
   echo '</ul>';
   echo '</aside>';
 endif;
-echo '<p class="text_righted"><a href="https://memo.hpmeister.com/allposts/">すべての投稿の一覧ページを表示する &raquo;</a></p>';
+echo '<p class="text_righted"><a href="https://hpmeister.com/blog.php">すべての投稿の一覧ページを表示する &raquo;</a></p>';
 wp_reset_postdata();
 
 get_template_part('inc/tagcloud');

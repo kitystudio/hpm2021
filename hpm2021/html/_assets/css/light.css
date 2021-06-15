@@ -35,7 +35,7 @@ button.close {
 }
 
 .menu {
-  background: #f0f0f0;
+  background: rgba(255, 255, 255, .50);
   box-shadow: 5px 5px 10px;
 }
 
