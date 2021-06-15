@@ -229,7 +229,7 @@ footer.content {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 5px;
-  max-height: calc( 100% - 4rem );
+  max-height: calc( 100% - 8rem );
   overflow-y: scroll;
 }
 
