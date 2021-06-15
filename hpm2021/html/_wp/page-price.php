@@ -20,7 +20,7 @@
     margin: auto;
   }
   </style>
-  <?= wp_head()?>
+  <?php echo wp_head(); ?>
 </head>
 <body>
   <div class="thecontent coverimage">

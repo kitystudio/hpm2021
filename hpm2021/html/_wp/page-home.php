@@ -1,6 +1,7 @@
 <?php
 /*
   Template Name: top
+  common menu screen
 */
 
 $paged = (int) get_query_var('paged');
@@ -28,7 +29,7 @@ endif;
 echo '<p class="text_righted"><a href="https://hpmeister.com/blog.php">すべての投稿の一覧ページを表示する &raquo;</a></p>';
 wp_reset_postdata();
 
-get_template_part('inc/tagcloud');
+get_template_part( 'inc/tagcloud' );
 echo '<aside class="search">';
 echo '<h3 class="menu_title">検索フォーム</h3>';
 get_search_form();

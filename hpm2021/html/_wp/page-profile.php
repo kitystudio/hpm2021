@@ -11,15 +11,15 @@ $all_wp_pages = $my_wp_query->query( array(
 ) );
 
 // 親とする固定ページをオブジェクトとして取得
-$profile = get_page_by_title('profile');
+$profile = get_page_by_title( 'profile' );
 
 // すべての固定ページから profile の子ページを探す
-$profile_children = get_page_children($profile->ID, $all_wp_pages);
+$profile_children = get_page_children( $profile->ID, $all_wp_pages );
 
 // WP から取得した結果をブラウザへ表示する
-$title = array_column($profile_children, 'post_title');
-$content = array_column($profile_children, 'post_content');
-$profile = array_combine($title, $content);
+$title = array_column( $profile_children, 'post_title' );
+$content = array_column( $profile_children, 'post_content' );
+$profile = array_combine( $title, $content );
 //var_dump($title);
 //var_dump($content);
 //var_dump($profile);

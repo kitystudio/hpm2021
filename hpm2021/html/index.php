@@ -40,7 +40,7 @@
       <div class="wrapper">
         <h2 class="sectiontitle">information</h2>
 <?php // WP 固定ページ（Information）
-  readfile ('https://memo.hpmeister.com/information/');
+  readfile ( 'https://memo.hpmeister.com/information/' );
 ?>
       </div>
     </section>
@@ -51,10 +51,10 @@
       </div>
       <div class="serviceswrapper">
 <?php // GoogleSpreadsheet
-  $result = file('https://docs.google.com/spreadsheets/d/e/2PACX-1vQT1GF1SLIz-_IB4-LV2LWCvNrgj6W7vCVwnzJGVSPxygdMlPALrSmqhF6TxKo0C5CItx8MKB3YdYWl/pub?output=csv');
+  $result = file( 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQT1GF1SLIz-_IB4-LV2LWCvNrgj6W7vCVwnzJGVSPxygdMlPALrSmqhF6TxKo0C5CItx8MKB3YdYWl/pub?output=csv' );
   for ( $i = 1; $i < sizeof( $result ); $i++ ) {
-    list($id, $service, $description, $more, $disp) = explode( ",", $result[ $i ] );
-    if ($disp == 1) {
+    list( $id, $service, $description, $more, $disp ) = explode( ",", $result[ $i ] );
+    if ( $disp == 1 ) {
 ?>
         <div class="servicemember">
           <h3 class="title"><?=$service?></h3>
@@ -78,7 +78,7 @@
       </div>
       <div class="profwrapper">
 <?php // 固定ページ（Profile）
-  readfile ('https://memo.hpmeister.com/profile/');
+  readfile ( 'https://memo.hpmeister.com/profile/' );
 ?>
       </div>
     </section>
@@ -102,7 +102,7 @@
     </footer>
     <article class="menu">
 <?php //WP 投稿ページ
-  readfile ('https://memo.hpmeister.com/home/');
+  readfile ( 'https://memo.hpmeister.com/home/' );
 ?>
 
     </article>
