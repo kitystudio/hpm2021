@@ -36,7 +36,7 @@ button.close {
 
 .menu {
   background: rgba(255, 255, 255, .50);
-  box-shadow: 5px 5px 10px;
+  /* box-shadow: 5px 5px 10px; */
 }
 
 .menu li a {
