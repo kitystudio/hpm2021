@@ -39,7 +39,7 @@ button.close {
 }
 
 .menu {
-  background: rgba(0, 0, 0, .75);
+  background: rgba(0, 0, 0, .5);
 }
 
 .menu li a {
@@ -53,4 +53,12 @@ footer.content .socmed img {
 
 .servicemember {
   border-color: #07718b;
+}
+
+.searchform input[type="submit"] {
+  background-color: #626262;
+}
+
+.searchform input[type="text"] {
+  background: transparent;
 }
