@@ -1,4 +1,6 @@
 # hpmeister2021
+hpmeister.comの後半バージョン。
+
 ウェブサイト（[hpmeister.com](https://hpmeister.com)）のリデザイン記録です。  
 ベータ版は[https://2021.hpmeister.com](https://2021.hpmeister.com)に置きます。
 
