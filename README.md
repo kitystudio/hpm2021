@@ -3,7 +3,6 @@ hpmeister.comの**後半**バージョン。
 7月公開予定。
 
 ウェブサイト（[hpmeister.com](https://hpmeister.com)）のリデザイン記録です。  
-ベータ版は[https://2021.hpmeister.com](https://2021.hpmeister.com)に置きます。
 
 1. Illustratorでデザイン
 
