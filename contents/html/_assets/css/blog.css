@@ -279,3 +279,7 @@ aside.page {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.screen-reader-text {
+  display: none;
+}

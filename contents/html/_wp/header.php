@@ -67,17 +67,7 @@
   <div class="thecontent">
     <header>
       <div class="logo"><a href="https://hpmeister.com/"><img src="https://hpmeister.com/_assets/logo.svg" alt="hpmeister logo" width="160"></a></div>
-      <nav>
-        <img src="https://hpmeister.com/_assets/menu.svg" alt="" width="30" class="menutoggle">
-        <div class="menu">
-          <ul>
-            <li><a href="https://hpmeister.com/">homepage</a></li>
-            <li><a href="https://hpmeister.com/#service">service</a></li>
-            <li><a href="https://hpmeister.com/#prof">profile</a></li>
-            <li><a href="https://hpmeister.com/#contact">contact</a></li>
-          </ul>
-        </div>
-      </nav>
+      <nav><img src="https://hpmeister.com/_assets/menu.svg" alt="" width="30" class="menutoggle"></nav>
     </header>
     <section id="blogentry">
       <div class="wrapper">
