@@ -4,7 +4,6 @@
   common menu screen
 */
 ?>
-<link rel="stylesheet" href="/_assets/css/blog.css">
 <?php
 $paged = (int) get_query_var('paged');
 $args = array(
