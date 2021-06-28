@@ -14,6 +14,11 @@ img.pict {
   padding-bottom: 1rem;
 }
 
+ul.dotted {
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
 h1 span {
   display: inline-block;
 }

@@ -14,7 +14,7 @@ header h1 {
   display: none;
 }
 
-ul {
+ul:not(.dotted) {
   list-style: none;
 }
 
