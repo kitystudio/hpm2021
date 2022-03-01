@@ -6,8 +6,12 @@
   background-color: #333;
 }
 
-header, footer.title {
+header {
   background-color: #69003e;
+}
+
+footer.title {
+  background-color: rgba(105, 0, 61, 0.5);
 }
 
 footer {

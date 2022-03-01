@@ -1,9 +1,17 @@
 * {
   color: #666;
 }
-header, footer.title {
+
+header {
   background-color: #9E005D;
+}
+header, footer.title {
   color: #E0E0E0;
+}
+
+footer.title {
+  background-color: rgba(158, 0, 92, 0.5);
+
 }
 
 footer {

@@ -99,7 +99,7 @@ figure figcaption {
 .article-body-more code {
   display: block;
   background-color: rgb(224, 224, 224);
-  margin: 4px 0px;
+  margin: 4px 0px 1rem;
   padding: 4px;
   color: #000;
   overflow-x: scroll;
